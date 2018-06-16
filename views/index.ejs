@@ -18,21 +18,18 @@
         <% allposts.forEach((post)=>{ %>
           <div class="container">
             <div class="card">
-          <div class="row">
-          <div class="col">
               <div class="card-header"><%= post.title %></div>
               <div class="card-body"><%= post.description %></div>
               <br>
               <form action="/readmore/<%= post._id %>" method="POST">
                 <button class="btn btn-sm" type="submit">Read More</button>
               </form>
-          </div>
-        </div>
+      </div>
+    </div>
         <% }) %> 
       <% }else{ %>
         <p>Make a new post</p>
       <% } %>
-    </div>
-  </div>
+   
 
 <% include ./partials/footer.ejs %>
