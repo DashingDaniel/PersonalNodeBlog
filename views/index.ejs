@@ -14,14 +14,11 @@
       <p>Here you can find some post related to web development. This website is still in development process but still i hope that you could find some usefull informations. Sorry for some UI bugs</p> 
     </div>
   <br>
-  <div class="container">
-    <div class="card">
       <% if(allposts){ %>
         <% allposts.forEach((post)=>{ %>
+          <div class="container">
+            <div class="card">
           <div class="row">
-          <div class="col text-center">
-            <img class="rounded" style="width: 100%; height: 200px;" src="<%= post.image %>" alt="">
-          </div>
           <div class="col">
               <div class="card-header"><%= post.title %></div>
               <div class="card-body"><%= post.description %></div>
