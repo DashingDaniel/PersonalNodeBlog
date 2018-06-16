@@ -1,0 +1,23 @@
+<% include ./partials/header.ejs %>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="/">Daniel's Blog</a>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    <div class="jumbotron">
+        <h1><%= post.title %></h1> 
+        <p><%= post.description %></p> 
+    </div>
+    <br>
+    <div class="container">
+        <div class="card">
+            <div class="card-header bg-secondary"><%= post.title %></div>
+            <div class="card-body"><%= post.content %></div>
+          </div>
+    </div>
+<% include ./partials/footer.ejs %>
